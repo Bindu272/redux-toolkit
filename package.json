@@ -16,7 +16,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": " jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+ "coverage":"jest --coverage"
   },
   "eslintConfig": {
     "extends": [
@@ -37,10 +38,14 @@
     ]
   },
   "babel": {
-    "presets": ["@babel/preset-react", "@babel/preset-env"],
-    "plugins": ["@babel/plugin-syntax-jsx"]
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-env"
+    ],
+    "plugins": [
+      "@babel/plugin-syntax-jsx"
+    ]
   },
-  
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.23.3",
     "@babel/preset-env": "^7.23.5",
@@ -48,6 +53,7 @@
     "@testing-library/dom": "^9.3.3",
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
   }
 }
