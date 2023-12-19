@@ -24,7 +24,7 @@ const ReactionsButtons = ({ post }) => {
           }
         >
           {emoji}
-          {post.reactions[name]}
+          {post.reactions[name] ||0}
         </button>
       );
     }
