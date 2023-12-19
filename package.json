@@ -17,7 +17,7 @@
     "build": "react-scripts build",
     "test": " jest",
     "eject": "react-scripts eject",
- "coverage":"jest --coverage"
+    "coverage": "jest --coverage"
   },
   "eslintConfig": {
     "extends": [
@@ -54,6 +54,7 @@
     "@testing-library/jest-dom": "^6.1.5",
     "@testing-library/react": "^14.1.2",
     "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0"
+    "jest-environment-jsdom": "^29.7.0",
+    "redux-mock-store": "^1.5.4"
   }
 }

@@ -1,9 +1,13 @@
-import { render,  } from '@testing-library/react';
-import App from '../App';
-import React from 'react';
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import App from "../App";
+import { Provider } from "react-redux";
+import { store } from "../app/store";
 
-describe('App test',()=>{
-  it('renders app correctly',()=>{
-    render(<App/>)
-  })
-})
+test("renders App component with AddPostForm and PostsList", () => {
+  render(
+    <Provider store={store}>
+      <App />
+    </Provider>
+  );
+});
